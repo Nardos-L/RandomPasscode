@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="container-password">
+    <h1>Random passcode (passcode #@ViewBag.Count)</h1>
+    <div class="center">
+        <div class="passwod-head">
+            <h3 >@ViewBag.Password</h3>
+        </div>
+        <div class="link-container">
+            <a class="link" href="/generate">Generate</a>
+            <a class="link" href="/clear">Clear</a>
+        </div>
+    </div>
+</div>
+
